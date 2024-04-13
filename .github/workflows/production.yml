@@ -60,7 +60,7 @@ jobs:
           push: true
           tags: jcas1/is601-spring2024-hw9:${{ github.sha }} # Uses the Git SHA for tagging
           platforms: linux/amd64,linux/arm64 # Multi-platform support
-          cache-from: type=registry,ref=jcas1/is601-spring2024-hw9:cache
+          cache-from: type=registry,ref=jcas121/is601-852-homework9:cache
           cache-to: type=inline,mode=max
           
       - name: Scan the Docker image
